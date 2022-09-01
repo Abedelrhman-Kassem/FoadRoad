@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- normalizeCss -->
+    <link rel="stylesheet" href="../Css/normalize.css" />
+    <!-- font-awesome icons-->
+    <link rel="stylesheet" href="../Css/all.min.css" />
+    <!-- mainCss -->
+    <link rel="stylesheet" href="../Css/main.css" />
+    <!-- registercss -->
+    <link rel="stylesheet" href="../Css/register.css" />
+    <title>FoodRoad</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="info">
+        <div class="logo">
+          <img src="../images/logo.png" alt="" />
+          Food<span>Road</span>
+        </div>
+        <h3>Register</h3>
+        <p>Let’s Sign up first for enter into Food Road Website. Uh She Up!</p>
+        <form action="">
+          <div class="inputs">
+            <div class="first_name">
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="First Name"
+                class="first-name"
+                id="first-name"
+              />
+              <label for="first-name">First Name</label>
+            </div>
+            <div class="last_name">
+              <input
+                required
+                type="text"
+                name="name"
+                placeholder="Last Name"
+                class="last-name"
+                id="last-name"
+              />
+              <label for="last-name">Last Name</label>
+            </div>
+            <span>+2</span>
+            <div class="_phone">
+              <input
+                required
+                type="number"
+                name="mobile"
+                placeholder="Phone Number"
+                class="phone"
+                id="phone"
+              />
+              <label for="phone">Phone Number</label>
+            </div>
+            <div class="_country">
+              <input
+                list="country"
+                required
+                name="country"
+                placeholder="Your Country"
+                class="country"
+              />
+              <label for="country">Your Country</label>
+              <datalist id="country">
+                <option value="Egypt"></option>
+                <option value="Saudi Arabia"></option>
+                <option value="Palestine"></option>
+                <option value="UEA"></option>
+                <option value="Sudan"></option>
+                <option value="Algeria"></option>
+                <option value="Tonnes"></option>
+                <option value="Lybia"></option>
+                <option value="Bahrein"></option>
+                <option value="Oman"></option>
+                <option value="Lebnan"></option>
+                <option value="Eraq"></option>
+                <option value="Soumal"></option>
+                <option value="Morroco"></option>
+                <option value="Moretania"></option>
+                <option value="Kuaet"></option>
+                <option value="Jurden"></option>
+                <option value="Syria"></option>
+                <option value="Jibooty"></option>
+                <option value="Comoros"></option>
+                <option value="Yemen"></option>
+                <option value="Qatar"></option>
+              </datalist>
+            </div>
+            <div class="_mail">
+              <input
+                required
+                type="text"
+                name="email"
+                placeholder="Mail Adress"
+                class="mail"
+                id="mail"
+              />
+              <label for="mail">Mail Adress</label>
+            </div>
+            <div class="_pass firstpass">
+              <input
+                required
+                type="password"
+                name="password"
+                placeholder="Password"
+                class="password one"
+                id="passone"
+              />
+              <label for="passone">Password</label>
+            </div>
+            <div class="_pass confirm">
+              <input
+                required
+                type="password"
+                name="password"
+                placeholder="Confirm Password"
+                class="password two"
+                id="passtwo"
+              />
+              <label for="passtwo">Confirm Password</label>
+            </div>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="agree" required />
+            <label for="agree"
+              >I agree to Square’s <a href="#">Cookie</a> and
+              <a href="#">Privacy Policy</a>.</label
+            >
+          </div>
+          <a href="login.html" class="login">Login</a>
+          <input type="submit" value="Get Started" class="start" />
+        </form>
+      </div>
+      <div class="image">
+        <img src="../images/register.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

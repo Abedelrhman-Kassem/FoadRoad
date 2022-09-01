@@ -1,0 +1,217 @@
+.content {
+  display: flex;
+}
+.info {
+  background-color: #fefefe;
+  flex-basis: 50%;
+}
+.logo {
+  margin: 25px auto 50px;
+  width: fit-content;
+}
+h3 {
+  font-size: 2.8em;
+  font-weight: 400;
+  margin: 30px auto;
+  width: fit-content;
+  color: var(--yellow-color);
+}
+p {
+  font-size: 0.8em;
+  font-family: "sen", sans-serif;
+  color: #92929d;
+  width: fit-content;
+  margin: 30px auto;
+}
+form {
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+form > div {
+  position: relative;
+}
+input.user,
+input.pass {
+  width: 100%;
+  outline: none;
+  padding: 12px;
+  border: 1px solid #e2e2ea;
+  border-radius: 32px;
+  font-family: "open sans", sans-serif;
+  font-size: 0.7em;
+  margin-bottom: 20px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  caret-color: var(--green-maincolor);
+}
+input.user:focus {
+  border-color: var(--green-maincolor);
+}
+input.pass:focus {
+  border-color: #fc5a5a;
+  caret-color: #fc5a5a;
+}
+input:focus::placeholder {
+  color: var(--green-maincolor);
+  opacity: 0;
+}
+
+input::placeholder {
+  color: #b5b5be;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.username label,
+.password label {
+  position: absolute;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--green-maincolor);
+  background: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.6em;
+  opacity: 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+.password label {
+  color: #fc5a5a;
+}
+input:focus + label {
+  opacity: 1;
+}
+.remember {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.check {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.check input {
+  margin: 0 10px 0;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.check input::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #fff;
+  font-size: 11px;
+}
+.check input:checked {
+  background-color: var(--green-maincolor);
+  border: none;
+}
+.check label {
+  font-size: 0.7em;
+  color: #696974;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+}
+.forgot.one {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: var(--yellow-color);
+  font-size: 0.7em;
+}
+.forgot.two {
+  color: var(--yellow-color);
+}
+.sub {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--green-maincolor);
+  font-size: 0.6em;
+  color: #fafafb;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border-radius: 22px;
+  -webkit-border-radius: 22px;
+  -moz-border-radius: 22px;
+  -ms-border-radius: 22px;
+  -o-border-radius: 22px;
+}
+.square {
+  width: fit-content;
+  margin: auto;
+  padding: 12px 20px;
+  background: #f8f8ff;
+  color: #2c2c3d;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.7em;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.square a {
+  color: #2c2c3d;
+  font-family: "Roboto", sans-serif;
+}
+
+.image {
+  flex-basis: 50%;
+  position: relative;
+}
+.image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  background-color: var(--overlay);
+}
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+@media (max-width: 991px) {
+  .info {
+    flex-basis: 100%;
+  }
+  .image {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .info p {
+    max-width: 160px;
+    text-align: center;
+    line-height: var(--line-p-height);
+    margin: 30px auto;
+  }
+  form {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
